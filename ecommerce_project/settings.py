@@ -126,3 +126,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://beam-project-20lk.onrender.com']
+
