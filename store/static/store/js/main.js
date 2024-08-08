@@ -26,7 +26,8 @@ $.ajaxSetup({
 });
 
 // WebSocket для уведомлений
-const socket = new WebSocket('ws://' + window.location.host + '/ws/notifications/');
+const socket = new WebSocket('wss://beam-project-20lk.onrender.com/ws/notifications/');
+
 
 socket.onmessage = function(e) {
     const data = JSON.parse(e.data);
